@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/styles2.css">
+    <title>Dating App</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-wrapper ">
+            <div class="container hide-on-med-and-down">
+                <a href="#!" class="brand-logo">Welcome <%= email %></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="!#" class="btn btn-floating pink lighten-1 userImg"><img src="<%= image %>" alt="user"
+                                height="42" width="42"></a></li>
+                    <li>
+                        <form action="/logout" method="POST">
+                            <button class="waves-effect waves-light btn modal-trigger grey darken-3">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="right hide-on-med-and-up">
+                    <li><a href="!#" class="btn btn-floating pink lighten-1 userImg"><img src="<%= image %>" alt="user"
+                                height="42" width="42"></a>
+                    </li>
+                    <li>
+                        <form action="/logout" method="POST">
+                            <button class="waves-effect waves-light btn modal-trigger grey darken-3">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container hide-on-med-and-up">
+            <div class="row">
+                <div class="col l12 s12 center">
+                    <h4 class="grey-text"> Welcome <%= email %> </h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section center">
+        <div class="container">
+            <div class="row">
+                <div class="col l12">
+                    <p class="flow-text">Hey! What is the point of joining the dating app if you cannot see what
+                        surprises we got for you...</p>
+                    <p>Check out some of our users may be you can find your match :</p>
+                </div>
+                <div class="col l5">
+
+                </div>
+                <div class="col l5 offset-l2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

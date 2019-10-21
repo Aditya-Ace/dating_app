@@ -1,0 +1,23 @@
+{
+  "name": "dating_app",
+  "version": "1.0.0",
+  "description": "Simple Dating App",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon db",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditya Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongodb": "^3.3.3",
+    "validator": "^11.1.0"
+  }
+}
