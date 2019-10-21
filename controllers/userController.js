@@ -40,7 +40,6 @@ exports.signup = (req, res) => {
             res.redirect("/");
         });
     });
-    saveUserImg(req.body.filepond);
 };
 
 

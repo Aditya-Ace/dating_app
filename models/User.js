@@ -23,15 +23,6 @@ User.prototype.cleanUp = function () {
     };
 };
 
-User.prototype.userImg = function () {
-    let imageEncoded = this.data.filepond;
-    if (imageEncoded == null) return;
-    const image = JSON.parse(imageEncoded);
-    if (image != null && imageMimeTypes.includes(image.type)) {
-        let originalImg = new Buffer.from(image.data, "base64");
-        let imageType = image.type;
-    }
-};
 
 User.prototype.validate = function () {
     return new Promise(async (resolve, reject) => {
@@ -91,7 +82,7 @@ User.prototype.signup = function () {
         if (!this.errors.length) {
             let salt = bcrypt.genSaltSync(10);
             this.data.password = bcrypt.hashSync(this.data.password, salt);
-            await usersCollection.insertOne(this.data, this.image);
+            await usersCollection.insertOne(this.data);
             resolve();
         } else {
             reject(this.errors);
