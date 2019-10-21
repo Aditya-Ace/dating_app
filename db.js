@@ -11,7 +11,7 @@ mongodb.connect(process.env.CONNECTIONSTRING, {
     } else {
         module.exports = client;
         const app = require("./app");
-        app.listen(process.env.PORT, () => {
+        app.listen(process.env.PORT || 8080, () => {
             console.log("Server is up and running with your db");
         });
     }
